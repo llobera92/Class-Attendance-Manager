@@ -8,15 +8,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="text-align:center;">
+        <div style="text-align: center;">
             <asp:Label ID="header" runat="server" Text="Class Attendance Manager" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
             <hr />
         </div>
-        <table style="width:100%; text-align:center;">
+        <table style="width: 100%; text-align: center;">
             <tr>
-                <td style="width:40%">
+                <td style="width: 40%">
                     <asp:Label ID="Label1" runat="server" Text="Student Name: "></asp:Label>
-                    <asp:TextBox ID="studentName" runat="server" Text="Please enter you name" Width="150px"></asp:TextBox> 
+                    <asp:TextBox ID="studentName" runat="server" Text="Please enter you name" Width="150px"></asp:TextBox>
                     <br />
                     <br />
                     <asp:Label ID="Label2" runat="server" Text="Student Id Number: "></asp:Label>
@@ -27,7 +27,7 @@
                     <br />
                     <br />
                     <center>
-                        <asp:Calendar ID="dateToCheck" style="a" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="187px" Width="207px">
+                        <asp:Calendar ID="dateToCheck" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="187px" Width="207px">
                         <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
                         <NextPrevStyle VerticalAlign="Bottom" />
                         <OtherMonthDayStyle ForeColor="#808080" />
@@ -41,17 +41,17 @@
                     <br />
                     <asp:Button ID="studentRequest" runat="server" Text="Submit" OnClick="studentRequest_Click" />
                 </td>
-                <td style="width:auto;" >
+                <td style="width: auto;">
 
                     <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Or"></asp:Label>
 
                 </td>
-                <td style="width:40%;" >
+                <td style="width: 40%;">
 
                     <asp:Label ID="Label5" runat="server" Font-Size="Large" Font-Underline="True" Text="Please fill up today's attendance form:"></asp:Label>
                     <br />
                     <br />
-                    <asp:Button ID="fillUpButton" runat="server" Text="Fill Up" />
+                    <asp:Button ID="fillUpButton" runat="server" Text="Fill Up" OnClick="fillUpButton_Click" />
 
                 </td>
             </tr>
