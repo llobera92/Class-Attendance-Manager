@@ -13,5 +13,15 @@ namespace ClassAttendanceManager
         {
 
         }
+
+        protected void studentRequest_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void fillUpButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
