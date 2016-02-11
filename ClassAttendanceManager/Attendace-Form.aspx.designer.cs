@@ -148,12 +148,21 @@ namespace ClassAttendanceManager {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// CheckBoxList1 control.
+        /// activitiesChkbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.CheckBoxList activitiesChkbox;
+        
+        /// <summary>
+        /// submitFormBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitFormBtn;
     }
 }
