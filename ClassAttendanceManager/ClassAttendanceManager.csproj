@@ -79,7 +79,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
-    <Content Include="Student-Records-Review.aspx" />
+    <Content Include="Student-Records-Preview.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,12 +102,12 @@
     </Compile>
     <Compile Include="Models\StudentAttendanceForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student-Records-Review.aspx.cs">
-      <DependentUpon>Student-Records-Review.aspx</DependentUpon>
+    <Compile Include="Student-Records-Preview.aspx.cs">
+      <DependentUpon>Student-Records-Preview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Student-Records-Review.aspx.designer.cs">
-      <DependentUpon>Student-Records-Review.aspx</DependentUpon>
+    <Compile Include="Student-Records-Preview.aspx.designer.cs">
+      <DependentUpon>Student-Records-Preview.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

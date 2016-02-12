@@ -8,10 +8,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="text-align: center;">
+        <div style="text-align: center; background-color: #CCCCCC;" aria-checked="undefined">
+            <br />
             <asp:Label ID="header" runat="server" Text="Class Attendance Manager" Font-Bold="True" Font-Size="XX-Large"></asp:Label>
             <hr />
         </div>
+        <br />
         <table style="width: 100%; text-align: center;">
             <tr>
                 <td style="width: 40%">
