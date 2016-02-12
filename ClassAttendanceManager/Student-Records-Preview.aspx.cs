@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassAttendanceManager.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,19 @@ namespace ClassAttendanceManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            StudentAttendanceForm newForm = (StudentAttendanceForm)Session["newForm"];
 
+            lblDate.Text = newForm.Date.Date.ToShortDateString();
+            lblTime.Text = newForm.Date.Date.ToShortTimeString();
+            lblName.Text = newForm.StudentName;
+            lblId.Text = newForm.StudentId;
+            lblClockInOut.Text = newForm.ClockInOut ? "Clock in" : "Clock Out";
+
+            foreach (var item in newForm.Activities)
+            {
+                lblActivities.Text += item;
+            }
+            
         }
     }
 }

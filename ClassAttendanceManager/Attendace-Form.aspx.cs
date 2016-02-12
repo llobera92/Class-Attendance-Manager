@@ -31,7 +31,7 @@ namespace ClassAttendanceManager
             StudentAttendanceForm newForm = new StudentAttendanceForm(currentTime, studentName.Text, studentId.Text, clockIn.Checked, activities);
 
             Session["newForm"] = newForm;
-            Response.Redirect("Student-Records-Review.aspx");
+            Response.Redirect("Student-Records-Preview.aspx");
         }
     }
 }
