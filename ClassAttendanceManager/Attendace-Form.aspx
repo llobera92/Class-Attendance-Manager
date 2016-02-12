@@ -17,10 +17,10 @@
         <br />
         <br />
         <asp:Label ID="Label3" runat="server" Text="Student Name: "></asp:Label>
-        <asp:TextBox ID="studentName" runat="server" Text="Please enter your full name" Width="252px"></asp:TextBox>
+        <asp:TextBox ID="studentName" runat="server" Width="198px"></asp:TextBox>
         <br />
         <asp:Label ID="Label4" runat="server" Text="Student ID: "></asp:Label>
-        <asp:TextBox ID="studentId" runat="server" Text="Please enter your sudent ID number" Width="217px"></asp:TextBox>
+        <asp:TextBox ID="studentId" runat="server" Width="169px"></asp:TextBox>
         <br />
         <!--Here I must add a label displaying current date and time-->
         <br />
@@ -33,16 +33,16 @@
         <br />
         <asp:Label ID="Label5" runat="server" Text="Plese select whether your cloking in or out: "></asp:Label>
         <br />
-        <asp:RadioButton ID="clockIn" Text="Clock In " runat="server" GroupName="ClockInOut" Enabled="True" />
-        <asp:RadioButton ID="clockOut" Text="Clock Out " GroupName="ClockInOut" runat="server" Enabled="False" />
+        <asp:RadioButton ID="clockIn" Text="Clock In " runat="server" GroupName="ClockInOut" Checked="true"/>
+        <asp:RadioButton ID="clockOut" Text="Clock Out " GroupName="ClockInOut" runat="server" />
         <br />
         <br />
         <asp:Label ID="Label6" runat="server" Text="Please select the activity for which you came today: "></asp:Label>                       
         <br />
         <asp:CheckBoxList ID="activitiesChkbox" runat="server" Width="153px">
-            <asp:ListItem Selected="True" Value="Regular Classes">classesPorpuse</asp:ListItem>
-            <asp:ListItem Value="Study">studyPorpouse</asp:ListItem>
-            <asp:ListItem Value="Other Business">othersPorpouse</asp:ListItem>
+            <asp:ListItem Selected="True" Value="classesPorpuse">Regular Classes</asp:ListItem>
+            <asp:ListItem Value="studyPorpouse">Study</asp:ListItem>
+            <asp:ListItem Value="othersPorpouse">Other Business</asp:ListItem>
         </asp:CheckBoxList>
         <br />
         <asp:Button ID="submitFormBtn" runat="server" Text="Button" OnClick="submitFormBtn_Click"/>

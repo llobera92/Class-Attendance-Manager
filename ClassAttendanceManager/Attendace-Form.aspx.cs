@@ -16,20 +16,22 @@ namespace ClassAttendanceManager
             DateTime currentTime = DateTime.Now;
             dateLbl.Text = currentTime.ToShortDateString();
             timeLbl.Text = currentTime.ToShortTimeString();
+            
         }  
 
-        protected void SumbitFormBtn_Click(object sender, EventArgs e)
+        protected void submitFormBtn_Click(object sender, EventArgs e)
         {
             List<string> activities = new List<string>();
 
-            for (int i = 0; i < activitiesChkbox.Items.Count; i++)
+            foreach(ListItem item in activitiesChkbox.Items)
             {
-                var temp = activitiesChkbox.Items[i].ToString();
-
-                activities.Add(temp);
+                if (item.Selected) activities.Add(item.Text);
             }
 
             StudentAttendanceForm newForm = new StudentAttendanceForm(currentTime, studentName.Text, studentId.Text, clockIn.Checked, activities);
+
+            Session["newForm"] = newForm;
+            Response.Redirect("Student-Records-Review.aspx");
         }
     }
 }

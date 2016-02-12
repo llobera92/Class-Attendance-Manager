@@ -30,7 +30,7 @@ namespace ClassAttendanceManager
         /// <param name="e"></param>
         protected void fillUpButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Attendance-Form.aspx");
+            Response.Redirect("Attendace-Form.aspx");
         }
     }
 }
