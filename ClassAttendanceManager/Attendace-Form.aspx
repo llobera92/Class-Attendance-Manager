@@ -27,6 +27,7 @@
         <asp:Label ID="Label3" runat="server" Text="Student Name: "></asp:Label>
         <asp:TextBox ID="studentName" runat="server" Width="198px"></asp:TextBox>
         <br />
+        <br />
         <asp:Label ID="Label4" runat="server" Text="Student ID: "></asp:Label>
         <asp:TextBox ID="studentId" runat="server" Width="169px"></asp:TextBox>
         <br />

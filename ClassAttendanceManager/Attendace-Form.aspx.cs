@@ -13,7 +13,7 @@ namespace ClassAttendanceManager
         DateTime currentTime = new DateTime();
         protected void Page_Load(object sender, EventArgs e)
         {
-            DateTime currentTime = DateTime.Now;
+            currentTime = DateTime.Now;
             dateLbl.Text = currentTime.ToShortDateString();
             timeLbl.Text = currentTime.ToShortTimeString();
             
@@ -22,6 +22,7 @@ namespace ClassAttendanceManager
         protected void submitFormBtn_Click(object sender, EventArgs e)
         {
             List<string> activities = new List<string>();
+
 
             foreach(ListItem item in activitiesChkbox.Items)
             {

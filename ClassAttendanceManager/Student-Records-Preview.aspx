@@ -24,7 +24,6 @@
                 <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Size="X-Large" Text="Student Record Preview"></asp:Label>
                 <br />
                 <asp:Label ID="Label2" runat="server" Font-Size="Medium" Font-Underline="True" Text="Please fill up all the informtation bellow:"></asp:Label>
-                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
                 <hr />
                 <br />
             </div>

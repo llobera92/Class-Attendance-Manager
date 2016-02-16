@@ -13,16 +13,16 @@ namespace ClassAttendanceManager
         protected void Page_Load(object sender, EventArgs e)
         {
             StudentAttendanceForm newForm = (StudentAttendanceForm)Session["newForm"];
-
-            lblDate.Text = newForm.Date.Date.ToShortDateString();
-            lblTime.Text = newForm.Date.Date.ToShortTimeString();
+            
+            lblDate.Text = newForm.Date.ToShortDateString();
+            lblTime.Text = newForm.Date.ToShortTimeString();
             lblName.Text = newForm.StudentName;
             lblId.Text = newForm.StudentId;
             lblClockInOut.Text = newForm.ClockInOut ? "Clock in" : "Clock Out";
 
             foreach (var item in newForm.Activities)
             {
-                lblActivities.Text += item;
+                lblActivities.Text = lblActivities.Text + " " + item;
             }
             
         }
